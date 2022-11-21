@@ -1,0 +1,39 @@
+.s-1{
+    background-color: lightcyan;
+
+    .container {
+        @extend %mycontainer;
+        @include goflex (row, space-between, center);
+        
+        background-color: lightblue;
+        height: 400px;
+
+        & > .box {
+            width: 150px;
+            height: 150px;
+
+            &:first-child {
+                background-color: blue;
+            }
+            &:nth-child(2) {
+                background-color: yellow;
+            }
+            &:last-child {
+                background-color: red;
+            }
+        }
+        
+    }    
+}
+
+.s-2 {
+    .container {
+        @extend %mycontainer;
+        background-color: green;
+        height: 300px;
+
+        .text_wrapper {
+            background-color: white;
+        }
+    }
+}

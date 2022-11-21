@@ -1,0 +1,6 @@
+@mixin goflex ($flex_direction, $justify, $align){
+    display: flex;
+    flex-direction: $flex_direction;
+    justify-content: $justify;
+    align-items: $align;
+}
